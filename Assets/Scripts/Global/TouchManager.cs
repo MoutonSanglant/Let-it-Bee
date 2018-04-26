@@ -1,6 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class TouchManager : MonoBehaviour
 {
@@ -26,6 +26,11 @@ public class TouchManager : MonoBehaviour
 		if (!_instance)
 			_instance = this;
 		_touchIsUsed = false;
+		if (!GameObject.Find("EventTrigger"))
+		{
+			gameObject.AddComponent<EventSystem>();
+			gameObject.AddComponent<StandaloneInputModule>();
+		}
 	}
 
 	public void SetIsUsed(bool b)
