@@ -20,11 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4341284522980128}
   - component: {fileID: 212602711585656308}
-  - component: {fileID: 58299296559707236}
   - component: {fileID: 50164227412188870}
   - component: {fileID: 114993222571191492}
   - component: {fileID: 114385112907387476}
   - component: {fileID: 114453205331032020}
+  - component: {fileID: 70568894698123780}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -56,7 +56,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4876668830835886}
   - component: {fileID: 212117937849680206}
-  - component: {fileID: 58840701780166960}
   m_Layer: 8
   m_Name: Head
   m_TagString: Untagged
@@ -84,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1007337063128084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2801356, y: -0.7386356, z: 0}
+  m_LocalPosition: {x: -5.2973986, y: 2.01833, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4048679908208982}
@@ -116,7 +115,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -125,8 +124,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &58299296559707236
-CircleCollider2D:
+--- !u!70 &70568894698123780
+CapsuleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -137,24 +136,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
---- !u!58 &58840701780166960
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1636078119824678}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
+  m_Offset: {x: 0, y: 0.35}
+  m_Size: {x: 1, y: 1.7}
+  m_Direction: 0
 --- !u!114 &114385112907387476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -170,7 +154,7 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 512
-  JumpForce: 25
+  JumpForce: 250
 --- !u!114 &114453205331032020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -195,7 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabTouch: {fileID: 1491534340946730, guid: 8e4291d7e8875bc4cb33b6fe208661f1,
     type: 2}
-  Speed: 20
+  Speed: 15
 --- !u!212 &212117937849680206
 SpriteRenderer:
   m_ObjectHideFlags: 1
