@@ -26,6 +26,16 @@ public class Move : MonoBehaviour
 		_maxSliderPos = new Vector2(Screen.width / 2, Screen.height - (Screen.height / 10));
 	}
 
+#if UNITY_EDITOR
+	private void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
+			OnTouchDown();
+		if ((Input.GetKeyUp(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow)) || (Input.GetKeyUp(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow)))
+			OnTouchUp();
+	}
+#endif
+
 	public void OnTouchDown()
 	{
 		if (TouchManager.Instance.TouchIsUsed || _isMoving)
@@ -66,6 +76,10 @@ public class Move : MonoBehaviour
 			tmp.y = Mathf.Clamp(tmp.y, _minSliderPos.y, _maxSliderPos.y);
 			_slider.gameObject.transform.position = tmp;
 			_slider.value = touchPos.x - _startPos;
+#if UNITY_EDITOR
+			if (Input.GetAxis("Horizontal") != 0)
+				_slider.value = (Input.GetAxis("Horizontal") > 0) ? _slider.maxValue * Input.GetAxis("Horizontal") : _slider.minValue * Input.GetAxis("Horizontal") * -1;
+#endif
 			yield return new WaitForFixedUpdate();
 			_rigid.velocity = new Vector2(_slider.value * Speed * Time.deltaTime, _rigid.velocity.y);
 		}

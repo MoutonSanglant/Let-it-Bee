@@ -13,6 +13,14 @@ public class Jump : MonoBehaviour
 		_rigid = GetComponent<Rigidbody2D>();
 	}
 
+#if UNITY_EDITOR
+	private void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Space))
+			OnTouchDown();
+	}
+#endif
+
 	public bool IsGrounded()
 	{
 		return (Physics2D.OverlapCircle(GroundCheck.position, 0.1f, Ground));
