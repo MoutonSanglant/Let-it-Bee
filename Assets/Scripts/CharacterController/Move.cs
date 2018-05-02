@@ -13,10 +13,12 @@ public class Move : MonoBehaviour
 	float _startPos;
 	Vector2 _minSliderPos;
 	Vector2 _maxSliderPos;
+	Jump _jump;
 
 	void Awake()
 	{
 		_isMoving = false;
+		_jump = GetComponent<Jump>();
 		var instance = Instantiate(PrefabTouch, Vector3.zero, Quaternion.identity) as GameObject;
 		_slider = instance.transform.GetChild(2).GetComponent<Slider>(); ;
 		_rigid = GetComponent<Rigidbody2D>();
@@ -28,6 +30,7 @@ public class Move : MonoBehaviour
 	{
 		if (TouchManager.Instance.TouchIsUsed || _isMoving)
 			return;
+		_rigid.bodyType = RigidbodyType2D.Dynamic;
 		_isMoving = true;
 		_slider.gameObject.SetActive(true);
 		if (Input.touchCount != 0)
@@ -70,6 +73,8 @@ public class Move : MonoBehaviour
 
 	public void OnTouchUp()
 	{
+		if (_jump.IsGrounded())
+			_rigid.velocity = Vector2.zero;
 		_isMoving = false;
 		_slider.gameObject.SetActive(false);
 		StopAllCoroutines();
