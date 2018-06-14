@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: Base
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: Bones/Hip
+    localPosition: {x: 0.066679955, y: 1.3421389, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.54634076, w: 0.8375631}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Hip/Torso
+    localPosition: {x: 0.7321075, y: -0.00000008940697, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.15207098, w: 0.9883696}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Hip/Torso/Arm R
+    localPosition: {x: 0.30921304, y: 0.40659058, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9898781, w: 0.14192064}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Hip/Torso/Arm L
+    localPosition: {x: 0.5237775, y: -0.49935997, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9820131, w: 0.1888127}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Hip/Torso/Neck
+    localPosition: {x: 0.60779506, y: 0.05834411, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.05934571, w: 0.9982375}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Hip/Upper Leg R
+    localPosition: {x: -0.36396262, y: 0.16209981, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.98131734, w: 0.19239628}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Hip/Upper Leg R/Leg R
+    localPosition: {x: 0.4808324, y: -0.00000008940697, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Hip/Upper Leg L
+    localPosition: {x: -0.05458483, y: -0.37144634, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.97317386, w: 0.23007087}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Hip/Upper Leg L/Leg L
+    localPosition: {x: 0.55112916, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
