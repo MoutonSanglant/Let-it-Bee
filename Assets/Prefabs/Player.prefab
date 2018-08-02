@@ -154,7 +154,7 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 512
-  JumpForce: 250
+  JumpForce: 190
 --- !u!114 &114453205331032020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -193,6 +193,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -237,6 +238,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
