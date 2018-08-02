@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 8
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -39,7 +39,6 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
-  m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -55,10 +54,11 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 9
     m_Resolution: 2
     m_BakeResolution: 40
-    m_AtlasSize: 1024
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
     m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
@@ -88,7 +88,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -176,7 +175,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -254,7 +252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 142563730}
   - component: {fileID: 142563731}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 192601052}
   - component: {fileID: 192601053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 280830484}
   - component: {fileID: 280830485}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -436,7 +434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 516041901}
   - component: {fileID: 516041902}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,7 +478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 541524903}
   - component: {fileID: 541524904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +522,7 @@ GameObject:
   m_Component:
   - component: {fileID: 615905243}
   - component: {fileID: 615905244}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 664611719}
   - component: {fileID: 664611720}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -662,7 +660,7 @@ GameObject:
   m_Component:
   - component: {fileID: 910854787}
   - component: {fileID: 910854788}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FreeGrainContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -706,7 +704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 939192127}
   - component: {fileID: 939192128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -750,7 +748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 974333434}
   - component: {fileID: 974333435}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: MinDist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -785,7 +783,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -827,7 +824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1038718531}
   - component: {fileID: 1038718532}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -871,7 +868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1104086333}
   - component: {fileID: 1104086334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -962,7 +959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1316161798}
   - component: {fileID: 1316161799}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1007,7 +1004,7 @@ GameObject:
   - component: {fileID: 1335794659}
   - component: {fileID: 1335794661}
   - component: {fileID: 1335794660}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Pollen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1112,7 +1109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1461676697}
   - component: {fileID: 1461676698}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1198,7 +1195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1637344230}
   - component: {fileID: 1637344231}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1242,7 +1239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1704124263}
   - component: {fileID: 1704124264}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1286,7 +1283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1730148781}
   - component: {fileID: 1730148782}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: MaxDist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1321,7 +1318,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -1363,7 +1359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1755104448}
   - component: {fileID: 1755104449}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1407,7 +1403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1790585298}
   - component: {fileID: 1790585299}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1452,7 +1448,7 @@ GameObject:
   - component: {fileID: 1825239969}
   - component: {fileID: 1825239971}
   - component: {fileID: 1825239970}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Wings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1518,7 +1514,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1946203405}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Pollen Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1569,7 +1565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1975272131}
   - component: {fileID: 1975272132}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1613,7 +1609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2035048236}
   - component: {fileID: 2035048237}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1657,7 +1653,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2057550167}
   - component: {fileID: 2057550168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1701,7 +1697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2117886457}
   - component: {fileID: 2117886458}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1747,7 +1743,7 @@ GameObject:
   - component: {fileID: 2120024936}
   - component: {fileID: 2120024935}
   - component: {fileID: 2120024934}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Push Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1826,7 +1822,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:

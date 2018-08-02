@@ -39,7 +39,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4385295140801580}
   - component: {fileID: 58799620146009372}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,13 +137,13 @@ MonoBehaviour:
   FreeGrainContainer: FreeGrainContainer
   AttachSpeed: 25
   GravityScale: 0.6
-  DespawnDelay: 10
   FadeTime: 1
   GrainColor: 0
   MovingTowardPlayer: 0
   AttachedToPlayer: 0
-  isMovable: 0
-  _fading: 0
+  OnFlower: 0
+  Fading: 0
+  Pushed: 0
 --- !u!212 &212947633382454130
 SpriteRenderer:
   m_ObjectHideFlags: 1
