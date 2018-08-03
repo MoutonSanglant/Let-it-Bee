@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-
- //   [SerializeField] private Transform player;
     public Transform respawnPoint;
+    public bool DoNotDestroy;
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Ground"))
-     // if (other.gameObject.name == "Ground")
+        if (!DoNotDestroy && other.gameObject.CompareTag("Ground"))
           Destroy(this.gameObject);
-      else if (other.gameObject.CompareTag("Player"))
-      {
-          Destroy(this.gameObject);
-          other.transform.position = respawnPoint.transform.position;
-          
-      }           
+        else if (other.gameObject.CompareTag("Player"))
+        {
+            if (!DoNotDestroy)
+                Destroy(this.gameObject);
+            
+            other.transform.position = respawnPoint.transform.position;
+        }           
     }
 }
