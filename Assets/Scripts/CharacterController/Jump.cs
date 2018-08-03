@@ -23,7 +23,7 @@ public class Jump : MonoBehaviour
 
 	public bool IsGrounded()
 	{
-		return (Physics2D.OverlapCircle(GroundCheck.position, 0.1f, Ground));
+		return (Physics2D.OverlapCircle(GroundCheck.position, 0.2f, Ground));
 	}
 
 	public void OnTouchDown()
