@@ -10,7 +10,7 @@ public class Ailes : MonoBehaviour
 	public bool AutoFire;
 
 	private CircleCollider2D _col;
-	private Touch _firstTouch, _fireTouch;
+	private UnityEngine.Touch _firstTouch;
 	private Vector3 _firstTouchPos;
 	private Vector2 _touchHeading;
 	private Wind _wind;
