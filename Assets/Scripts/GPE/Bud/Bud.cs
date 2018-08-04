@@ -29,6 +29,7 @@ public class Bud : MonoBehaviour
 		_isOpen = true;
 		PollenTrigger.SetActive (false);
 		Plateformes.SetActive(true);
+		GetComponent<SpriteRenderer>().enabled = false;
 		if (SpawnPollen) { PollenSpawner.gameObject.SetActive (true); }
 		StartCoroutine(DisableCanTouch());
 	}
