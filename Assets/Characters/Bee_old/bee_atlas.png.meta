@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: edfc3f52dc2882142ac9ff2c451ce281
+guid: 1de853faf17d81947873b51d8dd582c8
 TextureImporter:
   fileIDToRecycleName:
-    21300000: bee_atlas_0
-    21300002: bee_atlas_1
-    21300004: bee_atlas_2
-    21300006: bee_atlas_3
-    21300008: bee_atlas_4
-    21300010: bee_atlas_5
-    21300012: bee_atlas_6
-    21300014: bee_atlas_7
-    21300016: bee_atlas_8
-    21300018: bee_atlas_9
-    21300020: bee_atlas_10
-    21300022: bee_atlas_11
+    21300000: head
+    21300002: trunk
+    21300004: right_arm
+    21300006: left_arm
+    21300008: right_leg
+    21300010: left_leg
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -127,241 +121,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bee_atlas_0
+      name: head
       rect:
         serializedVersion: 2
-        x: 37.875443
-        y: 175.71977
-        width: 65
-        height: 68
+        x: 0
+        y: 331
+        width: 209
+        height: 267
       alignment: 9
-      pivot: {x: 0.48653165, y: 0.4894151}
+      pivot: {x: 0.48803827, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3571bcd7bcdc7074991466ec2a530b18
+      spriteID: c0658be757ede0249bb74d724f731481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bee_atlas_1
+      name: trunk
       rect:
         serializedVersion: 2
-        x: 109.220474
-        y: 173.46281
-        width: 75.56894
-        height: 76.917465
+        x: 231
+        y: 341
+        width: 255.39731
+        height: 229
       alignment: 9
-      pivot: {x: 0.49993458, y: 0.50101995}
+      pivot: {x: 0.49530673, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c5709022429bfc46bf8622e507a1c0f
+      spriteID: 7de93d51ec54052459046090bf8f85b2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bee_atlas_2
+      name: right_arm
       rect:
         serializedVersion: 2
-        x: 177.88925
-        y: 195
-        width: 43
-        height: 61
+        x: 29.534157
+        y: 198.17213
+        width: 34.998665
+        height: 103.24312
       alignment: 9
-      pivot: {x: 0.5025755, y: 0.5163934}
+      pivot: {x: 0.48475686, y: 0.54558474}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8775e3bd891e524297b5f0a839d3626
+      spriteID: e7c531cbbe5a6d149832862514bd7e8d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bee_atlas_3
+      name: left_arm
       rect:
         serializedVersion: 2
-        x: 210
-        y: 194
-        width: 43
-        height: 62
+        x: 129.89618
+        y: 201.17212
+        width: 34.498672
+        height: 101.69122
       alignment: 9
-      pivot: {x: 0.5232558, y: 0.5}
+      pivot: {x: 0.46679538, y: 0.53916043}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15689801109be6341a2a4a0d2d8cb86e
+      spriteID: 2198d561b9fd6c34aa888c34fcf21bb5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bee_atlas_4
+      name: right_leg
       rect:
         serializedVersion: 2
-        x: 185
-        y: 164
-        width: 20
-        height: 28
+        x: 18.764933
+        y: 0
+        width: 52.345444
+        height: 203.27261
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.51074296, y: 0.49932945}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e20c661dde3c17044b5d76c3442f9e0b
+      spriteID: 3de5046bdd365c14089570003b5a1189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bee_atlas_5
+      name: left_leg
       rect:
         serializedVersion: 2
-        x: 217
-        y: 165
-        width: 19
-        height: 27
+        x: 114.23855
+        y: 5.030656
+        width: 44.50747
+        height: 189.24588
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.48893932, y: 0.5071146}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a275dd3ac5324b0438679aee76dc428a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bee_atlas_6
-      rect:
-        serializedVersion: 2
-        x: 139.93893
-        y: 94
-        width: 70
-        height: 39
-      alignment: 9
-      pivot: {x: 0.5008724, y: 0.525641}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74d0685b1f0353a4bb4094ce2516b8ea
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bee_atlas_7
-      rect:
-        serializedVersion: 2
-        x: 200.77371
-        y: 96
-        width: 55.226288
-        height: 40
-      alignment: 9
-      pivot: {x: 0.5201561, y: 0.5125}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 009d0c2f25a37ca47b349c22744431b5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bee_atlas_8
-      rect:
-        serializedVersion: 2
-        x: 152.14209
-        y: 49.661465
-        width: 41
-        height: 35.000004
-      alignment: 9
-      pivot: {x: 0.47214413, y: 0.48110095}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eaefc7025d6107243b0cd9c3b751ce06
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bee_atlas_9
-      rect:
-        serializedVersion: 2
-        x: 212.26457
-        y: 47.92603
-        width: 34
-        height: 36.999996
-      alignment: 9
-      pivot: {x: 0.49221846, y: 0.47497222}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 618ae3e70c4ab8b42a06bea3e1a98343
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bee_atlas_10
-      rect:
-        serializedVersion: 2
-        x: 152.0098
-        y: 3.4843369
-        width: 43
-        height: 33
-      alignment: 9
-      pivot: {x: 0.4997722, y: 0.48532313}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97819415095d930428dd638d2f2df22b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bee_atlas_11
-      rect:
-        serializedVersion: 2
-        x: 212.97086
-        y: 1.2554436
-        width: 33
-        height: 37
-      alignment: 9
-      pivot: {x: 0.50088316, y: 0.49309614}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 535ce30b83775f24fa51cf6cd5793945
+      spriteID: 31f0143cf5424054bacf8213767a8ec1
       vertices: []
       indices: 
       edges: []
@@ -369,12 +243,12 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9d0335e9089ecf445beaadf370b09f37
+    spriteID: 5f2d1579b35f4164f8a7a782dcadde98
     vertices: []
     indices: 
     edges: []
     weights: []
   spritePackingTag: 
-  userData: 636690739543679896
+  userData: 636645333637473166
   assetBundleName: 
   assetBundleVariant: 
