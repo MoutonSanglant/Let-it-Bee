@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class Move : MonoBehaviour
 {
+	public Transform Character;
+	
 	public GameObject PrefabTouch;
 	public float Speed = 2;
 	Rigidbody2D _rigid;
@@ -82,6 +84,8 @@ public class Move : MonoBehaviour
 #endif
 			yield return new WaitForFixedUpdate();
 			_rigid.velocity = new Vector2(_slider.value * Speed * Time.deltaTime, _rigid.velocity.y);
+		
+			Character.transform.rotation = Quaternion.Euler(0, _rigid.velocity.x < 0.0f ? 180.0f : 0, 0);
 		}
 	}
 
