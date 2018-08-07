@@ -1,4 +1,4 @@
-== Let it Bee
+# Let it Bee
 Let it Bee is a student project for school 42. Made by Gauthier Druel, Stephanie Aubenneau, Divya Higelin and Thierry Defresne.
 
 
